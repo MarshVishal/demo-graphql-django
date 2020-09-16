@@ -8,3 +8,4 @@ pip3 install -r requirement.txt <br/>
 python manage.py migrate <br/>
 python manage.py loaddata ingredients <br/>
 python manage.py runserver <br/>
+http://127.0.0.1:8000/graphql
