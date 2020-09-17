@@ -77,7 +77,7 @@ query {
 
 
 # Or you can get only ‘meat’ ingredients containing the letter ‘e’:
-# You can also use `category: "CATEGORY GLOBAL ID"`
+## You can also use `category: "CATEGORY GLOBAL ID"`
 ```
 query {
   allIngredients(name_Icontains: "e", category_Name: "Meat") {
