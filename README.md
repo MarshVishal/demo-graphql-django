@@ -35,10 +35,10 @@ query {
 
 
 # get ingredient by id 
-```
-## Graphene creates globally unique IDs for all objects.
-## You may need to copy this value from the results of the first query
-```
+
+#### Graphene creates globally unique IDs for all objects.
+#### You may need to copy this value from the results of the first query
+
 ```
 query {
   ingredient(id: "SW5ncmVkaWVudE5vZGU6Mg==") {
