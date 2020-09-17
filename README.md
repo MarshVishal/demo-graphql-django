@@ -34,7 +34,7 @@ query {
 
 
 
-#get ingredient by id 
+# get ingredient by id 
 ```
 Graphene creates globally unique IDs for all objects.
 You may need to copy this value from the results of the first query
@@ -53,7 +53,7 @@ query {
 
 
 
-#You can also get each ingredient for each category:
+# You can also get each ingredient for each category:
 
 ```
 query {
@@ -76,7 +76,7 @@ query {
 
 
 
-#Or you can get only ‘meat’ ingredients containing the letter ‘e’:
+# Or you can get only ‘meat’ ingredients containing the letter ‘e’:
 # You can also use `category: "CATEGORY GLOBAL ID"`
 ```
 query {
