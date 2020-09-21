@@ -44,13 +44,17 @@ class Query(graphene.ObjectType):
     all_categories = graphene.List(CategoryType)
     category_by_name = graphene.Field(CategoryType, name=graphene.String(required=True))
 
+    @staticmethod
     def resolve_all_ingredients(root, info):
         # We can easily optimize query count in the resolve method
         return Ingredient.objects.select_related("category").all()
 
+    @staticmethod
     def resolve_all_categories(root, info):
+        # print(info.context.user)
         return Category.objects.all()
 
+    @staticmethod
     def resolve_category_by_name(root, info, name):
         try:
             return Category.objects.get(name=name)
